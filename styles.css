@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #d32f2f;
+    --background-color: #f9e3e3;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #8b0000; /* Darker red for hover effect */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.yes-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.no-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gif_container img:hover {
+    transform: scale(1.05); /* Slightly enlarge the GIF on hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Reduce font size for smaller screens */
+    }
+
+    .yes-button, .no-button {
+        font-size: 1.2em; /* Adjust button sizes for smaller screens */
+    }
+}
