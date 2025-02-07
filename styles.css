@@ -76,6 +76,19 @@ h1:hover {
     transform: scale(1.05); /* Slightly enlarge the GIF on hover */
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em; /* Reduce font size for smaller screens */
@@ -83,5 +96,9 @@ h1:hover {
 
     .yes-button, .no-button {
         font-size: 1.2em; /* Adjust button sizes for smaller screens */
+    }
+
+    .footer {
+        font-size: 0.8em;
     }
 }
